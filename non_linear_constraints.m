@@ -183,9 +183,11 @@ for i = 1:2*m+1
 end
 
 OBJECTIF = max(T)-min(T);             % objectif à minimiser
-Tmoy=5000/b/L;
-contrainte_3=max(T)/Tmoy-K_target;
-c=[-contrainte_1+Ga_min;contrainte_1-Ga_max;-contrainte_2+Ga_min;contrainte_2-Ga_max;contrainte_3;];
+Tmoy= 5000/b/L; 
+contrainte_3=max(T)/Tmoy-K_target; %not used
+c=[ Ga_min-min(G); max(G)-Ga_max]; 
+%old constraints
+%c=[G-contrainte_1+Ga_min;contrainte_1-Ga_max;-contrainte_2+Ga_min;contrainte_2-Ga_max];
 % =========================================================================
 % Curves
 % =========================================================================

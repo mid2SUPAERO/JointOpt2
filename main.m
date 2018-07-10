@@ -15,6 +15,9 @@ A = [];
 b = [];
 Aeq = [];
 beq = [];
+
+% lb = [ 100; 300 ];
+% ub = [2000;6000];
 lb = [];
 ub = [];
 x = fmincon(@(x) my_func(x,n_order,PARAMETERS),x0,A,b,Aeq,beq,lb,ub,@(x) non_linear_constraints(x,n_order,PARAMETERS),options);
