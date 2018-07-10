@@ -1,6 +1,6 @@
 # JointOpt2
 
-In this depository we have:
+In this depository we have the V2 version with new mathematical constraints (simplified):
 
 The simulation code  FGASLJ1DbarTEPS.m
 
